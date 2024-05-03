@@ -1,0 +1,390 @@
+ /* Define golden color as a CSS variable */
+ :root {
+    --golden-color: #7a6c01; /* Golden color */
+}
+
+/* Set page background color to black */
+body {
+    background-color: #000;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: var(--golden-color); /* Use golden color */
+    color: #fff; /* Text color same as hover color */
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 35px;
+    text-align: left;
+    padding: 100px;
+    text-decoration: none;
+    color: #fff; /* Text color same as hover color */
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    font-size: larger;
+    color: #fff; /* Text color same as hover color */
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar.navbar-light {
+    background-color: var(--golden-color); /* Set default background color */
+}
+
+.navbar.navbar-light .navbar-nav .nav-link {
+    color: #fff; /* Set default text color */
+}
+
+.navbar.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #000; /* Change background color on hover */
+}
+.nav-links li a:hover {
+    background-color: #000; /* Use golden color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('./back1.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+    color: var(--golden-color); /* Text color same as hover color */
+    padding: 80px 0;
+    text-align: center;
+    animation: slideInBottom 1s ease-out forwards;
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.button.selected {
+    background-color: var(--golden-color); /* Use golden color */
+    color: #000;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 30px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    margin-bottom: 80px;
+}
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px; /* Adjusted padding */
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #fff; /* Golden color */
+    color: var(--golden-color); /* Text color same as hover color */
+    text-decoration: none;
+    cursor: pointer;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    opacity: 0.8; /* Dim button opacity on hover */
+    background-color: var(--golden-color); /* Use golden color */
+    color: #000;
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.button p {
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline from text */
+}
+
+/* Golden text style */
+.golden-text {
+    color: var(--golden-color); /* Use golden color */
+}
+
+.more-info {
+    display: none;
+    padding-top: 10px;
+    background-color: #ffffff; /* Black background */
+    color: var(--golden-color); /* White text color */
+    padding: 20px;
+    transform-origin: top;
+    animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.show {
+    display: block;
+}
+
+.show-more-btn {
+    background-color: var(--golden-color);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.show-more-btn:hover {
+    background-color: #d4af37; /* Darker shade of golden color on hover */
+}
+
+/* Add animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Car section styles */
+.car {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-bottom: 30px;
+    animation: slideInLeft 3s ease;
+}
+
+.car:nth-child(even) {
+    animation: slideInRight 3s ease;
+}
+
+.car img {
+    width: 100%; /* Set width to 100% to make the images fill the container */
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images cover the entire container */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cars h1 {
+    margin-bottom: 30px;
+    color: var(--golden-color);
+}
+
+.car h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.car p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+
+/* JavaScript will add 'animate' class to trigger animations */
+.car.animate {
+    animation: slideInLeft 2s ease;
+}
+
+.car.animate:nth-child(even) {
+    animation: slideInRight 2s ease;
+}
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: "Press to show image";
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.3s ease; /* Adjust transition */
+    font-size: 20px;
+    pointer-events: none; /* Ensure the overlay doesn't block clicks */
+    /* Adjust padding for one column */
+    padding: 450px; /* You can adjust the value as needed */
+}
+
+.carousel-item:hover::after,
+.carousel-item.open::after { /* Apply styles when image is clicked */
+    opacity: 1;
+}
+
+
+
+
+
+/* Bootstrap Carousel */
+.carousel-item img {
+    width: 600px; /* Set width to 100% to make the images fill the container */
+    height: 900px; /* Set a fixed height for the images */
+    object-fit:cover;/* Ensure the images cover the entire container */
+  }
+
+/* Contact section styles */
+.contact-details {
+    background-color: var(--golden-color);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--golden-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+    transform: translateY(-5px); /* Move the link up slightly on hover */
+}
+/* Additional styles if needed */
+.instagram-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    fill: currentColor; /* Use the current text color */
+    margin-right: 5px; /* Optional: Add margin to the right */
+}
+/* Animation keyframes */
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

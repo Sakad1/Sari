@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- Bootstrap CSS (for carousel styling) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-X3pGnLBMkHqIgYPdF2+frDhmT4mXlVvfRdclF6Wx1+oqD9+d0h+jB8m2Y5zTo0n1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-X3pGnLBMkHqIgYPdF2+frDhmT4mXlVvfRdclF6Wx1+oqD9+d0h+jB8m2Y5zTo0n1" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Akkad's Automotive</title>
+    
+    <link href="./styles.css" rel="stylesheet">
+        
+    
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--golden-color);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html" style="color: #fff;">Akkad's Automotive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html" style="color: #fff;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./soldcars.html" style="color: #fff;">Sold Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" style="color: #fff;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html" style="color: #fff;">Contact</a>
+                    </li>
+                   
+                </ul>
+                
+            </div>
+            <a class="d-flex" href="https://www.instagram.com/akkads_automotive" target="_blank" rel="noopener noreferrer">
+                <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    
+      
+    
+
+      <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Akkad's Automotive</h1>
+                <p>Akkad's Automotive: Where affordability meets quality</p>
+            </div>
+            <div class="buttons">
+                <a href="#" class="button suv-btn">
+                    <img src="SUV.png" alt="SUV Icon">
+                    <h3>SUV</h3>
+                </a>
+                <a href="#" class="button sedan-btn">
+                    <img src="Sedan.png" alt="Sedan Icon">
+                    <h3>Sedan</h3>
+                </a>
+                <a href="#" class="button hatchback-btn">
+                    <img src="hatchback.png" alt="Hatchback Icon">
+                    <h3>Hatchback</h3>
+                </a>
+                <a href="#" class="button ute-btn">
+                    <img src="UTE.png" alt="UTE Icon">
+                    <h3>UTE</h3>
+                </a>
+                <a href="#" class="button motorcycle-btn">
+                    <img src="motorcycle.png" alt="Motorcycle Icon">
+                    <h3>Motorcycle</h3>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+
+
+    
+    <section class="cars">
+        <div class="container">
+            <h1>Our Cars</h1>
+            <div class="car-grid">
+
+
+                <div class="car" data-type="suv">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="./Honda-CRV/1.JPG" data-fancybox="CRV-gallery">
+                                    <img src="./Honda-CRV/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                                </a>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <a href="./Honda-CRV/2.JPG" data-fancybox="CRV-gallery">
+                                    <img src="./Honda-CRV/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                              <a href="./Honda-CRV/3.JPG" data-fancybox="CRV-gallery">
+                                  <img src="./Honda-CRV/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                              </a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="./Honda-CRV/4.JPG" data-fancybox="CRV-gallery">
+                                <img src="./Honda-CRV/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="./Honda-CRV/5.JPG" data-fancybox="CRV-gallery">
+                              <img src="./Honda-CRV/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                          </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./Honda-CRV/6.JPG" data-fancybox="CRV-gallery">
+                            <img src="./Honda-CRV/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                      <div class="carousel-item">
+                        <a href="./Honda-CRV/7.JPG" data-fancybox="CRV-gallery">
+                            <img src="./Honda-CRV/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                      <div class="carousel-item">
+                        <a href="./Honda-CRV/8.JPG" data-fancybox="CRV-gallery">
+                            <img src="./Honda-CRV/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./Honda-CRV/9.JPG" data-fancybox="CRV-gallery">
+                          <img src="./Honda-CRV/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                   
+                    
+    
+                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="car-card">
+                        <h3>HONDA CRV 2016</h3>
+                        <p>Price: $16,000</p>
+                        <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+                        <div class="more-info">
+                            <!-- More information content -->
+                            <h4>About this vehicle</h4>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Driven 21,000 km</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Automatic transmission</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Exterior colour: Black</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Interior colour: Black</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Fuel type: Petrol</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/hXLDX9xL4iZ.png&quot;); background-position: 0px -418px; background-size: 25px 901px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> 1 owner</p>
+                            <p>HONDA CRV 2016 AUTOMATIC LOW KM 21000 very clean like new # passed inspection #</p>
+                            <button class="show-more-btn" onclick="callNumber()">Call me</button>
+                            <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="car" data-type="hatchback">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="./toyota-corolla/1.JPG" data-fancybox="COROLLA-gallery">
+                                    <img src="./toyota-corolla/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                                </a>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <a href="./toyota-corolla/2.JPG" data-fancybox="COROLLA-gallery">
+                                    <img src="./toyota-corolla/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                              <a href="./toyota-corolla/3.JPG" data-fancybox="COROLLA-gallery">
+                                  <img src="./toyota-corolla/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                              </a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="./toyota-corolla/4.JPG" data-fancybox="COROLLA-gallery">
+                                <img src="./toyota-corolla/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="./toyota-corolla/5.JPG" data-fancybox="COROLLA-gallery">
+                              <img src="./toyota-corolla/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                          </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./toyota-corolla/6.JPG" data-fancybox="COROLLA-gallery">
+                            <img src="./toyota-corolla/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                      <div class="carousel-item">
+                        <a href="./toyota-corolla/7.JPG" data-fancybox="COROLLA-gallery">
+                            <img src="./toyota-corolla/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                      <div class="carousel-item">
+                        <a href="./toyota-corolla/8.JPG" data-fancybox="COROLLA-gallery">
+                            <img src="./toyota-corolla/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./toyota-corolla/9.JPG" data-fancybox="COROLLA-gallery">
+                          <img src="./toyota-corolla/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                    <div class="carousel-item">
+                      <a href="./toyota-corolla/10.JPG" data-fancybox="COROLLA-gallery">
+                          <img src="./toyota-corolla/10.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                    
+    
+                        </div>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="car-card">
+                        <h3>TOYOTA COROLLA 2018 HYBRID</h3>
+                        <p>Price: $21,000</p>
+                        <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+                        <div class="more-info">
+                            <!-- More information content -->
+                            <h4>About this vehicle</h4>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Driven 105,000 km</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Automatic transmission</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Exterior colour: Blue</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Interior colour: Black</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Fuel type: Petrol</p>
+                            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/hXLDX9xL4iZ.png&quot;); background-position: 0px -418px; background-size: 25px 901px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> 1 owner</p>
+                            <p>TOYOTA COROLLA 2018 HYBRID AUTOMATIC KM105000 FULL LOGBOOK SERVICE # CLEAR HISTORY #</p>
+                            <button class="show-more-btn" onclick="callNumber()">Call me</button>
+                            <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+
+              <div class="car" data-type="ute">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./ford/1.jpg" data-fancybox="gallery">
+                                <img src="./ford/1.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                            </a>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <a href="./ford/2.jpg" data-fancybox="gallery">
+                                <img src="./ford/2.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                          <a href="./ford/3.jpg" data-fancybox="gallery">
+                              <img src="./ford/3.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                          </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./ford/4.jpg" data-fancybox="gallery">
+                            <img src="./ford/4.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./ford/5.jpg" data-fancybox="gallery">
+                          <img src="./ford/5.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./ford/6.jpg" data-fancybox="gallery">
+                        <img src="./ford/6.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                  <div class="carousel-item">
+                    <a href="./ford/7.jpg" data-fancybox="gallery">
+                        <img src="./ford/7.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                  <div class="carousel-item">
+                    <a href="./ford/8.jpg" data-fancybox="gallery">
+                        <img src="./ford/8.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="./ford/9.jpg" data-fancybox="gallery">
+                      <img src="./ford/9.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+                <div class="carousel-item">
+                  <a href="./ford/10.jpg" data-fancybox="gallery">
+                      <img src="./ford/10.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+                <div class="carousel-item">
+                  <a href="./ford/11.jpg" data-fancybox="gallery">
+                      <img src="./ford/11.jpg" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+
+                    </div>
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="car-card">
+                    <h3>2017 Ford Ranger</h3>
+                    <p>Price: $33,000</p>
+                    <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+                    <div class="more-info">
+                        <!-- More information content -->
+                        <h4>About this vehicle</h4>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Driven 142,000 km</p>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Automatic transmission</p>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Exterior colour: Black</p>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Interior colour: Black</p>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> Fuel type: Diesel</p>
+                        <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/hXLDX9xL4iZ.png&quot;); background-position: 0px -418px; background-size: 25px 901px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i> 1 owner</p>
+                        <p>Ford Ranger special edition 3.2L Clear history no accident Comes with rego and rwc 142000KM Full logbook service</p>
+                        <button class="show-more-btn" onclick="callNumber()">Call me</button>
+                        <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+                    </div>
+                </div>
+            </div>
+
+          <div class="car" data-type="suv">
+            <!-- Cars of type SUV -->
+            <div class="car-card">
+               
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="./mazda-cx30/1.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/2.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/3.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/4.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/5.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/6.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/7.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/8.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/9.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/10.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/10.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="./mazda-cx30/11.JPG" data-fancybox="Mazda-cx30-gallery">
+                            <img src="./mazda-cx30/11.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                        </a>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <h3>2020 Mazda CX-30</h3>
+                <p>Price: $25,000</p> 
+                <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+                <div class="more-info">
+                  <h4>About this vehicle</h4>
+                  <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Driven 31,000 km</p>
+                  <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Automatic transmission</p>
+                  <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Exterior colour: Blue</p>
+                  <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Interior colour: Black</p>
+                  <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Fuel type: Petrol</p>
+                  <p>Mazda cx30 2020 low km 31000 Auto comes with rego and RWC # passed inspection #
+                    </p>
+                  <button class="show-more-btn" onclick="callNumber()">Call me</button>
+                  <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="car" data-type="suv">
+          <!-- Cars of type SUV -->
+          <div class="car-card">
+             
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="./nissan/1.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/2.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/3.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/4.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/5.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/6.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/7.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/8.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="./nissan/9.JPG" data-fancybox="nissan-gallery">
+                          <img src="./nissan/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      </a>
+                  </div>
+                   
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              <h3>Nissan x-trail 2018</h3>
+              <p>Price: $22,000</p> 
+              <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+              <div class="more-info">
+                <h4>About this vehicle</h4>
+                <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Driven 91,000 km</p>
+                <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Automatic transmission</p>
+                <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Exterior colour: Grey</p>
+                <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Interior colour: Black</p>
+                <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Fuel type: Petrol</p>
+                <p>Nissan x-trail 2018 91000km full logbook service clear history comes with rego and RWC
+                  </p>
+                <button class="show-more-btn" onclick="callNumber()">Call me</button>
+                <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="car" data-type="sedan">
+        <!-- Cars of type SUV -->
+        <div class="car-card">
+           
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="./Audi/1.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/2.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/3.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/4.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/5.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/6.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/7.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/8.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/9.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/10.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/10.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/11.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/11.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/12.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/12.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Audi/13.JPG" data-fancybox="audi-gallery">
+                        <img src="./Audi/13.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                    </a>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <h3>AUDI A7 2015</h3>
+            <p>Price: $34,000</p> 
+            <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+            <div class="more-info">
+              <h4>About this vehicle</h4>
+              <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Driven 42,000 km</p>
+              <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Automatic transmission</p>
+              <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Exterior colour: Grey</p>
+              <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Interior colour: Black</p>
+              <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Fuel type: Petrol</p>
+              <p>AUDI A7 2015 low km 42000 # passed inspection # on WOVI#
+                </p>
+              <button class="show-more-btn" onclick="callNumber()">Call me</button>
+              <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="car" data-type="suv">
+      <!-- Cars of type SUV -->
+      <div class="car-card">
+         
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="./toyota/1.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/1.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/2.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/2.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/3.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/3.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/4.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/4.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/5.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/5.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/6.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/6.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/7.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/7.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/8.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/8.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/9.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/9.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/10.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/10.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                  </a>
+              </div>
+              <div class="carousel-item">
+                  <a href="./toyota/11.JPG" data-fancybox="toyota-gallery">
+                      <img src="./toyota/11.JPG" class="d-block w-100 car-image" alt="Car Image" loading="eager">
+                      
+                  </a>
+              </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          <h3>TOYOTA RAV4 2018</h3>
+          <p>Price: $22,000</p> 
+          <button class="show-more-btn" onclick="toggleMoreInfo(this)">Show More</button>
+          <div class="more-info">
+            <h4>About this vehicle</h4>
+            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: 0px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Driven 117,000 km</p>
+            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Automatic transmission</p>
+            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Exterior colour: White</p>
+            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -63px -21px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Interior colour: Black</p>
+            <p><i data-visualcompletion="css-img" class="x1b0d499 xuo83w3" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/3_VdSwbgedq.png&quot;); background-position: -21px -63px; background-size: 109px 126px; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>  Fuel type: Petrol</p>
+            <p>TOYOTA RAV4 2018 AUTO 117000 KM 2.5 AWD FULL LOGBOOK SERVICE # PASSED INSPECTION #
+              </p>
+            <button class="show-more-btn" onclick="callNumber()">Call me</button>
+            <button class="show-more-btn" onclick="messageNumber()">Message me</button>
+        </div>
+      </div>
+  </div>
+
+
+ 
+</div>
+                <div class="car" data-type="sedan">
+                    <!-- Cars of type Sedan -->
+                    
+                </div>
+                <div class="car" data-type="hatchback">
+                    <!-- Cars of type Hatchback -->
+                </div>
+                <div class="car" data-type="ute">
+                    <!-- Cars of type UTE -->
+                </div>
+                <div class="car" data-type="motorcycle">
+                    <!-- Cars of type Motorcycle -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-details">
+      <div class="container">
+          <h2>Contact Details</h2>
+          <p>Address: 4 Grove Pl
+              Bracken Ridge QLD 4017
+              Australia</p>
+          <p>Phone: 0405 786 595</p>
+          <p>Email: akkadsautomotive@gmail.com</p>
+          <!-- Instagram icon -->
+          <a href="https://www.instagram.com/akkads_automotive" target="_blank" rel="noopener noreferrer">
+            <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+            </svg>
+        </a>
+        </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>© 2024 Akkad's Automotive. All rights reserved.</p>
+              </div>
+              <div class="col-md-6">
+                  <ul class="footer-links">
+                      <li><a href="./about.html">About Us</a></li>
+                      <li><a href="./Contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Fancybox JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!-- Bootstrap JavaScript (for carousel functionality) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+      $(document).ready(function() {
+            // Initialize Fancybox
+            $("[data-fancybox]").fancybox({
+                // Options
+                loop: true // Enable looping through images
+            });
+        });
+     document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.button');
+    const cars = document.querySelectorAll('.car');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            const type = this.classList[1].split('-')[0]; // Get the type of car from class
+            cars.forEach(car => {
+                car.style.display = 'none'; // Hide all cars
+            });
+            document.querySelectorAll(`[data-type="${type}"]`).forEach(car => {
+                car.style.display = 'block'; // Show cars of selected type
+            });
+
+            // Remove the 'selected' class from all buttons
+            buttons.forEach(btn => {
+                btn.classList.remove('selected');
+            });
+
+            // Add the 'selected' class to the clicked button
+            this.classList.add('selected');
+
+            // Scroll to the cars section
+            const carsSection = document.querySelector('.cars');
+            carsSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
+
+
+
+      
+    // Function to handle toggling more info section
+    function toggleMoreInfo(button) {
+        const moreInfo = button.nextElementSibling;
+        moreInfo.classList.toggle('show');
+    }
+
+    // Function to handle calling
+    function callNumber() {
+        window.location.href = 'tel:0405786595';
+    }
+
+    // Function to handle messaging
+    function messageNumber() {
+        window.location.href = 'sms:0405786595';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.button');
+        const cars = document.querySelectorAll('.car');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const type = this.classList[1].split('-')[0]; // Get the type of car from class
+                cars.forEach(car => {
+                    car.style.display = 'none'; // Hide all cars
+                });
+                document.querySelectorAll(`[data-type="${type}"]`).forEach(car => {
+                    car.style.display = 'block'; // Show cars of selected type
+                });
+            });
+        });
+
+        // Assigning functionality to "Call me" buttons
+        const callButtons = document.querySelectorAll('.more-info .show-more-btn:nth-of-type(1)');
+        callButtons.forEach(button => {
+            button.addEventListener('click', callNumber);
+        });
+
+        // Assigning functionality to "Message me" buttons
+        const messageButtons = document.querySelectorAll('.more-info .show-more-btn:nth-of-type(2)');
+        messageButtons.forEach(button => {
+            button.addEventListener('click', messageNumber);
+        });
+    });
+  
+
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="./index.js"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
